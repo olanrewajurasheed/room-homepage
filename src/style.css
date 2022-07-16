@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    background-image: url('../images/desktop-image-hero-1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
