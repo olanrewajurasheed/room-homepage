@@ -558,6 +558,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -654,10 +666,6 @@ video {
   background-size: cover;
 }
 
-.bg-fixed {
-  background-attachment: fixed;
-}
-
 .bg-center {
   background-position: center;
 }
@@ -669,6 +677,11 @@ video {
 .px-\[3\%\] {
   padding-left: 3%;
   padding-right: 3%;
+}
+
+.px-\[10\%\] {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .pl-\[10\%\] {
