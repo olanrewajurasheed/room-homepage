@@ -15,32 +15,33 @@
 
     <title>Room homepage</title>
   </head>
-  <body>
-    <div class="grid grid-rows-[500px,150px] grid-cols-[65%,35%]">
+  <body class="mx-[50px] mt-[50px]">
+    <div class="grid grid-rows-[500px] grid-cols-[65%,35%]">
       <div
         id="header_section"
-        class="col-start-1 col-end-2 row-start-1 row-end-1 bg-no-repeat bg-fixed"
+        class="col-start-1 col-end-2 row-start-1 row-end-1 bg-cover bg-no-repeat bg-fixed bg-center
+        flex space-x-10 pl-[10%] pt-[50px] text-white"
         style="background-image: url('../images/desktop-image-hero-1.jpg')"
       >
-        <nav>
+        <nav class="text-2xl">
           <a> room </a>
         </nav>
-        <nav>
+        <nav class="space-x-6">
           <a>home</a>
           <a>shop</a>
           <a>about</a>
           <a>contact</a>
         </nav>
       </div>
-      <div>
-        <h1>Discover innovative ways to decorate</h1>
+      <div class="pl-[15%] pt-[60px] space-y-6">
+        <h1 class="text-black font-extrabold text-4xl">Discover innovative ways to decorate</h1>
         <p>
           We provide unmatch quality, comfort and style for property owners
           across the country. Our experts combine form and function in bringing 
           your vision to life. Create a room in your own style with our collection
           and make your property a reflection of you and what you have
         </p>
-        <h3> shop now <img src="../images/icon-arrow.svg"></h3>
+        <h3 class="flex gap-x-4 uppercase font-extrabold tracking-[15px]"> shop now <img src="../images/icon-arrow.svg"></h3>
       </div>
     </div>
   </body>
