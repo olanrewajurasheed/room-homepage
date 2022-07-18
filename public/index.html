@@ -20,31 +20,47 @@
     <title>Room homepage</title>
   </head>
   <body class="text-[12px]">
-    <div class="grid grid-cols-[60%,40%]"> <!--Grid for the hero section-->
+    <div class="flex flex-col md:flex-row"> <!--flex for the hero section-->
       <div
-        id="header_section"
-        class="col-start-1 col-end-2 h-[500px]"
+        class="basis-[60%] h-[500px]"
       >
         <div class="relative">
-          <img src="../images/desktop-image-hero-1.jpg" class="w-[100%] h-[500px]"/>
+          <img src="../images/desktop-image-hero-1.jpg" class="w-[100%] h-[300px] md:h-[500px]"/>
         </div>
-        <div class="absolute flex space-x-12 text-white pl-[5%] top-10">
-          <nav class="self-center">
+        <div class="absolute flex space-x-12 text-white pl-[5%] md:pl-[2%] top-10 md:left-0">
+          <div class="">
+            <img src="../images/icon-hamburger.svg" class="md:hidden">
+          </div>
+          <div class="self-center">
             <img src="../images/logo.svg" />
-          </nav>
-          <nav class="self-start space-x-6">
+          </div>
+          <nav class="hidden md:block self-start space-x-6">
             <a>home</a>
             <a>shop</a>
             <a>about</a>
             <a>contact</a>
           </nav>
+          <div class="flex md:hidden bottom-10">
+            <div class="bg-black h-[40px] w-[40px]">
+              <img
+                src="../images/icon-angle-left.svg"
+                class="mx-[20%] my-[20%] h-[25px] w-[20px]"
+              />
+            </div>
+            <div class="bg-black h-[40px] w-[40px]">
+              <img
+                src="../images/icon-angle-right.svg"
+                class="mx-[20%] my-[20%] h-[25px] w-[20px]"
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <div class="flex flex-col justify-between h-[500px]">
-        <h1 class="px-[10%] md:px-[15%] pt-[18%] font-bold text-3xl md:text-[40px]">
+      <div class="basis-[40%] flex flex-col justify-between h-[500px]">
+        <h1 class="px-[10%] md:px-[15%] pt-[12%] md:pt-[18%] pb-[5%] md:pb-0 font-bold text-3xl md:text-[40px]">
           Discover innovative ways to decorate
         </h1>
-        <p class="px-[10%] md:pl-[15%] pr-[20%] text-darkGray">
+        <p class="px-[10%] md:pl-[15%] md:pr-[20%] pb-[10%] md:pb-0 text-darkGray">
           We provide unmatch quality, comfort and style for property owners
           across the country. Our experts combine form and function in bringing
           your vision to life. Create a room in your own style with our
@@ -52,11 +68,11 @@
           love.
         </p>
         <h3
-          class="px-[10%] md:px-[15%] flex gap-x-4 uppercase font-semibold tracking-[10px]"
+          class="px-[10%] md:px-[15%] pb-[10%] md:pb-0 flex gap-x-4 uppercase font-semibold tracking-[10px]"
         >
           shop now <img src="../images/icon-arrow.svg" />
         </h3>
-        <div class="flex pt-9">
+        <div class="hidden md:flex pt-9">
           <div class="bg-black h-[70px] w-[70px]">
             <img
               src="../images/icon-angle-left.svg"
@@ -72,13 +88,13 @@
         </div>
       </div>
     </div>
-    <div class="flex">
+    <div class="flex flex-col md:flex-row">
       <div class="basis-[30%]">
         <img src="../images/image-about-dark.jpg" class="w-[100%] h-[250px]" />
       </div>
-      <div class="basis-[40%] h-[250px] px-[4%] pt-[50px]">
+      <div class="basis-[40%] h-[250px] px-[10%] md:px-[4%] pt-[50px]">
         <h3 class="uppercase tracking-[5px] font-bold">About our furniture</h3>
-        <p class="pt-[10px] text-darkGray">
+        <p class="pt-[10px] pb-[10%] md:pb-0 text-darkGray">
           Our multifunctional collection blends design and function to suit your
           individual taste. Make each room unique, or pick a cohesive theme that
           best express your interests and what inspires you. find the furniture
