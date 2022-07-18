@@ -12,23 +12,27 @@
       href="../images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=League+Spartan:400,700"
+      rel="stylesheet"
+    /> <!--Importing the league Spartan font-->
 
     <title>Room homepage</title>
   </head>
-  <body>
-    <div class="grid grid-rows-[534px] grid-cols-[60%,40%]">
+  <body class="text-[12px]">
+    <div class="grid grid-cols-[60%,40%]"> <!--Grid for the hero section-->
       <div
         id="header_section"
-        class="col-start-1 col-end-2 row-start-1 row-end-1"
+        class="col-start-1 col-end-2 h-[500px]"
       >
         <div class="relative">
-          <img src="../images/desktop-image-hero-1.jpg" class="w-[100%]" />
+          <img src="../images/desktop-image-hero-1.jpg" class="w-[100%] h-[500px]"/>
         </div>
-        <div class="absolute space-x-10  text-white">
-          <nav class="">
+        <div class="absolute flex space-x-12 text-white pl-[5%] top-10">
+          <nav class="self-center">
             <img src="../images/logo.svg" />
           </nav>
-          <nav class="space-x-6">
+          <nav class="self-start space-x-6">
             <a>home</a>
             <a>shop</a>
             <a>about</a>
@@ -36,33 +40,33 @@
           </nav>
         </div>
       </div>
-      <div class="space-y-6">
-        <h1 class="px-[10%] pt-[60px] text-black font-extrabold text-[40px]">
+      <div class="flex flex-col justify-between h-[500px]">
+        <h1 class="px-[10%] md:px-[15%] pt-[18%] font-bold text-3xl md:text-[40px]">
           Discover innovative ways to decorate
         </h1>
-        <p class="px-[10%]">
+        <p class="px-[10%] md:pl-[15%] pr-[20%] text-darkGray">
           We provide unmatch quality, comfort and style for property owners
           across the country. Our experts combine form and function in bringing
           your vision to life. Create a room in your own style with our
           collection and make your property a reflection of you and what you
-          have
+          love.
         </p>
         <h3
-          class="px-[10%] flex gap-x-4 uppercase font-extrabold tracking-[15px]"
+          class="px-[10%] md:px-[15%] flex gap-x-4 uppercase font-semibold tracking-[10px]"
         >
           shop now <img src="../images/icon-arrow.svg" />
         </h3>
-        <div class="flex pt-9 gap-0">
-          <div class="bg-black h-[100px] w-[100px]">
+        <div class="flex pt-9">
+          <div class="bg-black h-[70px] w-[70px]">
             <img
               src="../images/icon-angle-left.svg"
-              class="h-[40px] w-[30px]"
+              class="mx-[20%] my-[20%] h-[40px] w-[30px]"
             />
           </div>
-          <div class="bg-black h-[100px] w-[100px]">
+          <div class="bg-black h-[70px] w-[70px]">
             <img
               src="../images/icon-angle-right.svg"
-              class="h-[40px] w-[30px]"
+              class="mx-[20%] my-[20%] h-[40px] w-[30px]"
             />
           </div>
         </div>
@@ -70,11 +74,11 @@
     </div>
     <div class="flex">
       <div class="basis-[30%]">
-        <img src="../images/image-about-dark.jpg" class="w-[100%]" />
+        <img src="../images/image-about-dark.jpg" class="w-[100%] h-[250px]" />
       </div>
-      <div class="basis-[40%] px-[3%] pt-[40px]">
+      <div class="basis-[40%] h-[250px] px-[4%] pt-[50px]">
         <h3 class="uppercase tracking-[5px] font-bold">About our furniture</h3>
-        <p class="pt-[15px]">
+        <p class="pt-[10px] text-darkGray">
           Our multifunctional collection blends design and function to suit your
           individual taste. Make each room unique, or pick a cohesive theme that
           best express your interests and what inspires you. find the furniture
@@ -83,8 +87,8 @@
           dream space.
         </p>
       </div>
-      <div class="basis-[30%]">
-        <img src="../images/image-about-light.jpg" class="w-[100%]" />
+      <div class="basis-[30%] ">
+        <img src="../images/image-about-light.jpg" class="w-[100%] h-[250px]" />
       </div>
     </div>
   </body>
