@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../images/favicon-32x32.png"
+      href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="../dist/output.css" />
     <link
@@ -26,20 +26,24 @@
       <div class="basis-[60%] h-[500px]">
         <div class="relative">
           <img
-            src="../images/desktop-image-hero-1.jpg"
+            src="./images/desktop-image-hero-1.jpg"
             class="w-[100%] h-[300px] md:h-[500px]"
           />
         </div>
         <div class="absolute flex md:hidden top-[270px] right-0">
-          <div class="bg-black hover:bg-veryDarkGray h-[30px] w-[30px] md:h-[40px] md:w-[40px]">
+          <div
+            class="bg-black hover:bg-veryDarkGray h-[30px] w-[30px] md:h-[40px] md:w-[40px]"
+          >
             <img
-              src="../images/icon-angle-left.svg"
+              src="./images/icon-angle-left.svg"
               class="mx-[20%] my-[20%] h-[15px] w-[15px] md:h-[25px] md:w-[20px]"
             />
           </div>
-          <div class="bg-black hover:bg-veryDarkGray h-[30px] w-[30px] md:h-[40px] md:w-[40px]">
+          <div
+            class="bg-black hover:bg-veryDarkGray h-[30px] w-[30px] md:h-[40px] md:w-[40px]"
+          >
             <img
-              src="../images/icon-angle-right.svg"
+              src="./images/icon-angle-right.svg"
               class="mx-[20%] my-[20%] h-[15px] w-[15px] md:h-[25px] md:w-[20px]"
             />
           </div>
@@ -47,11 +51,13 @@
         <div
           class="absolute flex space-x-28 md:space-x-12 text-white pl-[5%] md:pl-[2%] top-10 md:left-0"
         >
-          <div class="">
-            <img src="../images/icon-hamburger.svg" class="md:hidden" />
+          <div id="hamburger">
+            <a>
+              <img src="./images/icon-hamburger.svg" class="md:hidden" />
+            </a>
           </div>
           <div class="self-center">
-            <img src="../images/logo.svg" />
+            <img src="./images/logo.svg" />
           </div>
           <nav class="hidden md:block self-start space-x-6 font-bold">
             <a class="hover:border-b-2 border-white cursor-pointer">home</a>
@@ -59,6 +65,30 @@
             <a class="hover:border-b-2 border-white cursor-pointer">about</a>
             <a class="hover:border-b-2 border-white cursor-pointer">contact</a>
           </nav>
+        </div>
+        <div
+          id="mobile_navbar"
+          class="hidden absolute space-x-12 pl-[5%] top-0 pt-6 pb-4 md:hidden bg-white w-[100%]"
+        >
+          <div id="close_navbar">
+            <a>
+              <img src="./images/icon-close.svg" />
+            </a>
+          </div>
+          <div class="space-x-6">
+            <a class="hover:border-b-2 border-white cursor-pointer font-bold"
+              >home</a
+            >
+            <a class="hover:border-b-2 border-white cursor-pointer font-bold"
+              >shop</a
+            >
+            <a class="hover:border-b-2 border-white cursor-pointer font-bold"
+              >about</a
+            >
+            <a class="hover:border-b-2 border-white cursor-pointer font-bold"
+              >contact</a
+            >
+          </div>
         </div>
       </div>
       <div class="basis-[40%] flex flex-col justify-between h-[500px]">
@@ -77,21 +107,20 @@
           love.
         </p>
         <h3
-          class="px-[10%] md:px-[15%] pb-[10%] md:pb-0 flex gap-x-4 uppercase font-semibold 
-          tracking-[10px] hover:text-darkGray cursor-pointer"
+          class="px-[10%] md:px-[15%] pb-[10%] md:pb-0 flex gap-x-4 uppercase font-semibold tracking-[10px] hover:text-darkGray cursor-pointer"
         >
-          shop now <img src="../images/icon-arrow.svg" />
+          shop now <img src="./images/icon-arrow.svg" />
         </h3>
         <div class="hidden md:flex pt-9">
           <div class="bg-black hover:bg-veryDarkGray h-[70px] w-[70px]">
             <img
-              src="../images/icon-angle-left.svg"
+              src="./images/icon-angle-left.svg"
               class="mx-[20%] my-[20%] h-[40px] w-[30px]"
             />
           </div>
           <div class="bg-black hover:bg-veryDarkGray h-[70px] w-[70px]">
             <img
-              src="../images/icon-angle-right.svg"
+              src="./images/icon-angle-right.svg"
               class="mx-[20%] my-[20%] h-[40px] w-[30px]"
             />
           </div>
@@ -100,10 +129,12 @@
     </div>
     <div class="flex flex-col md:flex-row">
       <div class="basis-[30%]">
-        <img src="../images/image-about-dark.jpg" class="w-[100%] h-[250px]" />
+        <img src="./images/image-about-dark.jpg" class="w-[100%] h-[250px]" />
       </div>
       <div class="basis-[40%] h-[250px] px-[10%] md:px-[4%] pt-[50px]">
-        <h3 class="uppercase tracking-[5px] font-extrabold ">About our furniture</h3>
+        <h3 class="uppercase tracking-[5px] font-extrabold">
+          About our furniture
+        </h3>
         <p class="pt-[10px] pb-[10%] md:pb-0 text-darkGray font-semibold">
           Our multifunctional collection blends design and function to suit your
           individual taste. Make each room unique, or pick a cohesive theme that
@@ -114,8 +145,10 @@
         </p>
       </div>
       <div class="basis-[30%]">
-        <img src="../images/image-about-light.jpg" class="w-[100%] h-[250px]" />
+        <img src="./images/image-about-light.jpg" class="w-[100%] h-[250px]" />
       </div>
     </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
