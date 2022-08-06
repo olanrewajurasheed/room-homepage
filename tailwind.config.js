@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      'spartan': ['League Spartan', 'san-serif']
+    },
     screens: {
       sm: '480px',
       md: '768px',
