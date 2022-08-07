@@ -47,18 +47,13 @@ header_texts = [
 // functions to activate sliding of desktop_images
 let i = 0;
 let j = 0;
+let k = 0;
 
 function prev() {
   if (i <= 0) {
     i = desktop_images.length;
     i--;
     return setImg();
-  }
-
-  if (j <= 0) {
-    j = header_texts.length;
-    j--;
-    return setHeader();
   }
 }
 
@@ -68,7 +63,17 @@ function next() {
     i++;
     return setImg();
   }
+}
 
+function prev() {
+  if (j <= 0) {
+    j = header_texts.length;
+    j--;
+    return setHeader();
+  }
+}
+
+function next() {
   if (j >= header_texts.length - 1) {
     j = -1;
     j++;
@@ -76,10 +81,16 @@ function next() {
   }
 }
 
-function setImg() {
-  return desktop_image.setAttribute("src", "images/" + desktop_images[i]);
+overallTrigerring();
+
+function overallTrigerring() {
+  function setImg() {
+    return desktop_image.setAttribute("src", "images/" + desktop_images[i]);
+  }
+  
+  function setHeader() {
+    return header_text.textContent = header_texts[i];
+  }
 }
 
-function setHeader() {
-  return header_text.textContent = header_texts[i];
-}
+

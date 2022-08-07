@@ -718,6 +718,11 @@ video {
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
 }
 
+.bg-darkGray {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 63% / var(--tw-bg-opacity));
+}
+
 .px-\[10\%\] {
   padding-left: 10%;
   padding-right: 10%;
@@ -757,6 +762,10 @@ video {
 
 .pt-\[10px\] {
   padding-top: 10px;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .font-spartan {
@@ -810,14 +819,27 @@ video {
   border-bottom-width: 2px;
 }
 
+.hover\:border-b-4:hover {
+  border-bottom-width: 4px;
+}
+
 .hover\:bg-veryDarkGray:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 27% / var(--tw-bg-opacity));
 }
 
+.hover\:bg-neutral-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity));
+}
+
 .hover\:text-darkGray:hover {
   --tw-text-opacity: 1;
   color: hsl(0 0% 63% / var(--tw-text-opacity));
+}
+
+.hover\:opacity-5:hover {
+  opacity: 0.05;
 }
 
 @media (min-width: 768px) {
