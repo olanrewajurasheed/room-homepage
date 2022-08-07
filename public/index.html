@@ -26,13 +26,14 @@
       <div class="basis-[60%] h-[500px]">
         <div class="relative">
           <img
+            id="desktop_image"
             src="./images/desktop-image-hero-1.jpg"
             class="w-[100%] h-[300px] md:h-[500px]"
           />
         </div>
         <div class="absolute flex md:hidden top-[270px] right-0">
           <div
-            class="bg-black hover:bg-veryDarkGray h-[30px] w-[30px] md:h-[40px] md:w-[40px]"
+            class="bg-black hover:bg-veryDarkGray cursor-pointer h-[30px] w-[30px] md:h-[40px] md:w-[40px]"
           >
             <img
               src="./images/icon-angle-left.svg"
@@ -40,7 +41,7 @@
             />
           </div>
           <div
-            class="bg-black hover:bg-veryDarkGray h-[30px] w-[30px] md:h-[40px] md:w-[40px]"
+            class="bg-black hover:bg-veryDarkGray cursor-pointer h-[30px] w-[30px] md:h-[40px] md:w-[40px]"
           >
             <img
               src="./images/icon-angle-right.svg"
@@ -93,6 +94,7 @@
       </div>
       <div class="basis-[40%] flex flex-col justify-between h-[500px]">
         <h1
+        id="header_text"
           class="px-[10%] md:px-[15%] pt-[12%] md:pt-[18%] pb-[5%] md:pb-0 font-bold text-3xl md:text-[40px]"
         >
           Discover innovative ways to decorate
@@ -112,17 +114,17 @@
           shop now <img src="./images/icon-arrow.svg" />
         </h3>
         <div class="hidden md:flex pt-9">
-          <div class="bg-black hover:bg-veryDarkGray h-[70px] w-[70px]">
-            <img
+          <div class="bg-black hover:bg-veryDarkGray cursor-pointer h-[70px] w-[70px]">
+            <a onclick="prev()"><img
               src="./images/icon-angle-left.svg"
               class="mx-[20%] my-[20%] h-[40px] w-[30px]"
-            />
+            /></a>
           </div>
-          <div class="bg-black hover:bg-veryDarkGray h-[70px] w-[70px]">
-            <img
+          <div class="bg-black hover:bg-veryDarkGray cursor-pointer h-[70px] w-[70px]">
+            <a onclick="next()"><img
               src="./images/icon-angle-right.svg"
               class="mx-[20%] my-[20%] h-[40px] w-[30px]"
-            />
+            /></a>
           </div>
         </div>
       </div>
